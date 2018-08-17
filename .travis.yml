@@ -1,3 +1,4 @@
+sudo: required
 language: node_js
 node_js:
   - "8"
@@ -16,7 +17,7 @@ install:
   - npm install
   - npm run build
 before_script:
-  - sleep 15
+  - sleep 150
 script:
   - nohup npm run start &
   - sleep 3
