@@ -24,7 +24,7 @@ class BlogForm extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.props.handleSubmit(this.props.onBlogSubmit)}>
+        <form className="blogForm" onSubmit={this.props.handleSubmit(this.props.onBlogSubmit)}>
           {this.renderFields()}
           <Link to="/blogs" className="red btn-flat white-text">
             Cancel

@@ -10,16 +10,16 @@ class Header extends Component {
       case false:
         return (
           <li>
-            <a href={'/auth/google'}>Login With Google</a>
+            <a className="login-link" href={'/auth/google'}>Login With Google</a>
           </li>
         );
       default:
         return [
           <li key="3" style={{ margin: '0 10px' }}>
-            <Link to="/blogs">My Blogs</Link>
+            <Link className="blog-link" to="/blogs">My Blogs</Link>
           </li>,
           <li key="2">
-            <a href={'/auth/logout'}>Logout</a>
+            <a className="logout-link" href={'/auth/logout'}>Logout</a>
           </li>
         ];
     }
